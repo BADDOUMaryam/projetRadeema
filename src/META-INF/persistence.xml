@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="projetRadeemaPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>bean.Agence</class>
+    <class>bean.Client</class>
+    <class>bean.Consommation</class>
+    <class>bean.Employe</class>
+    <class>bean.Facteur</class>
+    <class>bean.TrancheEau</class>
+    <class>bean.TrancheElectricite</class>
+    <class>bean.Quartier</class>
+    <class>bean.Secteur</class>
+    <class>bean.Rue</class>
+    <class>bean.Reclamation</class>
+    <class>bean.FactureTrancheEau</class>
+    <class>bean.FactureTrancheElectricite</class>
+    <class>bean.FactureEau</class>
+    <class>bean.FactureElectricite</class>
+    <class>bean.User</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/tpRadeema?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+    </properties>
+  </persistence-unit>
+</persistence>
